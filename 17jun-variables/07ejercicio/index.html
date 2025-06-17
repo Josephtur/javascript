@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Javascript</title>
+</head>
+<body>
+    <h1>Ejercicios Matematicos Interactivos</h1>
+    <div class="container">
+        <div class="card">
+            <h2>1. Perimetro de un rectangulo</h2>
+            <!-- for="baseRect" =id="baseRect" se crea una relacion que al dar un clic en el label me dirige al input -->
+            <label for="baseRect">Base:</label>
+            <input type="number" id="baseRect" placeholder="Ingresa la base">
+
+            <label for="alturaRect">Altura:</label>
+            <input type="number" id="alturaRect" placeholder="Ingresa la altura">
+
+            <button onclick="calcularPerimetro()">Calcular</button>
+            <p class="result" id="resPerimetro"></p>
+        </div>
+
+        <!-- Conversion celsius a Fahrenheit -->
+        <div class="card">
+            <h2>2. Celsius a Fahrenheit</h2>
+            <label for="celsius">Grados Celsius:</label>
+            <input type="number" id="celsius" placeholder="°C">
+            <button onclick="convertirFahrenheit()">Convertir</button>
+            <p class="result" id="resFahrenheit"></p>
+        </div>
+
+ </div>
+</body>
+</html>
