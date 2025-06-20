@@ -45,3 +45,21 @@ const cadena = colores3.join(" - ");
 console.log(cadena);
 
 //9. Recorrer con for ... of y condicion
+const nums = [10, 15, 20, 25, 30];
+// en cada vuelta, la variable n toma el valor de uno de los elementos de nums
+for (let n of nums){
+    // el operador  % devuelve el resto de la division si es 0
+    // Si es 0 entonces es multiplo de 20
+    if ( n % 20 === 0){
+        console.log(`${n} es multiplo de 20`);
+    }
+}
+
+// 10. declarar un array de frutas con 3 elementos
+const frutas = ["manzana", "pera", "uva"];
+
+// Usar el metodo .map() para transformar cada elemento del array
+// La funcion flecha f => f.toUpperCase() recibe cada fruta (f) y devuelve su version en MAYUS
+const FRUTAS_MAYUS = frutas.map(f => f.toUpperCase());
+
+console.log(FRUTAS_MAYUS);
